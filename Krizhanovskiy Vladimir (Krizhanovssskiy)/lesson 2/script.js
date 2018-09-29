@@ -1,5 +1,7 @@
 window.onload = function () {
-    const sumArr = [2, 4, 5, 9, 21];
+
+    //   Сумма чисел масива
+    const sumArr = [5, 7, 9, 6];
     
     function sum(elem) {
         let result = 0;
@@ -9,6 +11,34 @@ window.onload = function () {
         return result;
     }
     console.log('Сума масива sumArr - ' + sum(sumArr));
+
+    //    Сортировка масива чисел методом .sort()
+    const numArr = [5, 3, 1, 98, 9, 7, 12, 9, 1];
+    numArr.sort(compareNum);
+    function compareNum (a, b) {
+        return a - b;
+    }
+    console.log(numArr);
+
+    //    Сортировка масива чисел с помощю цикла for
+    const arreyNunber = [5, 3, 1, 98, 9, 7, 12, 9, 1];
+    function sortNumber (arrey) {
+        let res;
+        for (let i = 0; i < arrey.length; i++) {
+            for (let a = 0; a < arrey.length - 1; a++){
+                if (i !== a) {
+                    if (arrey[i] < arrey[a]) {
+                        res = arrey[i];
+                        arrey[i] = arrey[a];
+                        arrey[a] = res;
+
+                    }
+                }
+            }
+        }
+        return arrey;
+    }
+    console.log(sortNumber(arreyNunber));
 
 
 };
