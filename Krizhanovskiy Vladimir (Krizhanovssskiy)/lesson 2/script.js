@@ -54,7 +54,23 @@ window.onload = function () {
     }
     console.log(uniqueElem(arrUnique));
 
+    //  Цисла Фибоначчи
 
+    function fibon(num) {
+        var a = 0,
+            b = 1,
+            sumFib;
+        for (let i = 2; i <= num; i++) {
+            sumFib = a + b;
+            a = b;
+            b = sumFib;
+        }
+        return sumFib;
+    }
+
+    console.log(fibon(5));
+    console.log(fibon(10));
+    console.log(fibon(100));
 
 
 };
