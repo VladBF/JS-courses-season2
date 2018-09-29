@@ -20,7 +20,7 @@ window.onload = function () {
     }
     console.log(numArr);
 
-    //    Сортировка масива чисел с помощю цикла for
+    //    Сортировка масива чисел с помощю функции sortNumber() в цикле for
     const arreyNunber = [5, 3, 1, 98, 9, 7, 12, 9, 1];
     function sortNumber (arrey) {
         let res;
@@ -39,6 +39,22 @@ window.onload = function () {
         return arrey;
     }
     console.log(sortNumber(arreyNunber));
+
+    //   Функция кторая возващаэт масив с уникальными елементами
+    const arrUnique = [2, 8, 2, 2, 5, 6, 1, 'a', 7, 99, 15, 1, 99, 15, 'a'];
+    function uniqueElem(arrey) {
+        const newArr = [];
+        for (let i = 0; i < arrey.length; i++) {
+
+            if (newArr.indexOf(arrey[i]) === -1) {
+                newArr.push(arrey[i]);
+            }
+        }
+        return newArr;
+    }
+    console.log(uniqueElem(arrUnique));
+
+
 
 
 };
