@@ -2,7 +2,7 @@ function numbFibonacci(count) {
     var arr = [0, 1];
 
     if(count <= 0) {
-        return arr =[];
+        return arr = [];
     }
     if (count == 1) {
         arr.pop();
