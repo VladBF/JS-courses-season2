@@ -21,8 +21,8 @@ window.onload = function () {
     console.log(numArr);
 
     //    Сортировка масива чисел с помощю функции sortNumber() в цикле for
-    const arreyNunber = [5, 3, 1, 98, 9, 7, 12, 9, 1];
-    function sortNumber (arrey) {
+    const initialArr = [5, 3, 1, 98, 9, 7, 12, 9, 1];
+    function sortNumber(arrey) {
         let res;
         for (let i = 0; i < arrey.length; i++) {
             for (let a = 0; a < arrey.length - 1; a++){
@@ -38,7 +38,7 @@ window.onload = function () {
         }
         return arrey;
     }
-    console.log(sortNumber(arreyNunber));
+    console.log(sortNumber(initialArr));
 
     //   Функция кторая возващаэт масив с уникальными елементами
     const arrUnique = [2, 8, 2, 2, 5, 6, 1, 'a', 7, 99, 15, 1, 99, 15, 'a'];
@@ -59,13 +59,17 @@ window.onload = function () {
     function fibon(num) {
         var a = 0,
             b = 1,
-            sumFib;
+            sumFib,
+            fibArray = [0, 1];
+
         for (let i = 2; i <= num; i++) {
+
             sumFib = a + b;
             a = b;
             b = sumFib;
+            fibArray.push(b);
         }
-        return sumFib;
+        return fibArray;
     }
 
     console.log(fibon(5));
