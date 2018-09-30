@@ -1,6 +1,6 @@
 var arr1 = [34, 17, 82, 7, 7, 31, 2];
 
-function sortArray (diffArray) {
+function sortArray(diffArray) {
     return diffArray.sort(function (a, b) {
         return a - b;
     });
@@ -10,8 +10,9 @@ console.log(sortArray(arr1));
 
 var arr2 = [56, 19, 9, 63, 9, 50, 80];
 
-function sortArrayFor (diffArray) {
-    var element, j;
+function sortArrayFor(diffArray) {
+    var element;
+    var j;
 
     for(let i = 1; i < diffArray.length; i++) {
         element = diffArray[i];
