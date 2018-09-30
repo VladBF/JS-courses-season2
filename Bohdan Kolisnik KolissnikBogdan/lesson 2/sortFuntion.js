@@ -5,7 +5,7 @@ var arbitraryArray = [2, 3, 3, 4, 4, 2, 1, 10];
  */
 
 function sortArrayByFunction(someArray) {
-	return someArray.sort((a, b) => a - b);
+    return someArray.sort((a, b) => a - b);
 }
 
 console.log("Sorted array in ascending (method .sort) : ");
@@ -31,7 +31,7 @@ function sortArrayByFor(someArray) {
 		someArray[midInd] = temp;
 	}
 
-	return someArray;
+    return someArray;
 }
 
 console.log("Sorted array in ascending (using for) : ");
