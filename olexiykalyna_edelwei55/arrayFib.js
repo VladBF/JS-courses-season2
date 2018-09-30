@@ -1,5 +1,5 @@
 var count = 0;
-function numboffibonaci() {
+function numbOfFibonaci() {
     var array  = [1, 2];
     count = prompt("Введите количество чисел: ");
      for (let i = 2; i < count; i++){
@@ -7,5 +7,5 @@ function numboffibonaci() {
     }
     return array;
 }
-var numb = numboffibonaci();
+var numb = numbOfFibonaci();
 alert("Массив с " + count + " числами Фибоначчи: " + numb);
