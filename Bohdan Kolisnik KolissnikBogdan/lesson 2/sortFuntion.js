@@ -4,7 +4,7 @@ var arbitraryArray = [2, 3, 3, 4, 4, 2, 1, 10];
  * Array sorting function using the .sort method
  */
 
-function sortArrayByFunction (someArray) {
+function sortArrayByFunction(someArray) {
 	return someArray.sort((a, b) => a - b);
 }
 
@@ -15,7 +15,7 @@ console.log(sortArrayByFunction(arbitraryArray));
  * Array sorting function using for loop 
  */
 
-function sortArrayByFor (someArray) {
+function sortArrayByFor(someArray) {
 	var midInd, temp;
 
 	for (let i = 0; i < someArray; i++) {
