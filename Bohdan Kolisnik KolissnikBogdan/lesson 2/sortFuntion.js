@@ -16,20 +16,20 @@ console.log(sortArrayByFunction(arbitraryArray));
  */
 
 function sortArrayByFor(someArray) {
-	var midInd, temp;
+    var midInd, temp;
 
-	for (let i = 0; i < someArray; i++) {
-		midInd = i;
-		for (let j = i + 1; j < someArray.length; j++) {
-			if(someArray[j] < someArray[midInd]) {
-				midInd = j;
-			}
-		}
-		
-		temp = someArray[i];
-		someArray[i] = someArray[midInd];
-		someArray[midInd] = temp;
-	}
+    for (let i = 0; i < someArray; i++) {
+        midInd = i;
+        for (let j = i + 1; j < someArray.length; j++) {
+            if(someArray[j] < someArray[midInd]) {
+                midInd = j;
+            }
+        }
+
+        temp = someArray[i];
+        someArray[i] = someArray[midInd];
+        someArray[midInd] = temp;
+    }
 
     return someArray;
 }
