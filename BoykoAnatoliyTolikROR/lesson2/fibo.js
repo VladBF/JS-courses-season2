@@ -8,7 +8,6 @@ function fibo(n) {
       fibonacciArray.push(1);
     } else {
       lgArray = fibonacciArray.length - 1;
-      console.log(lgArray);
       fibonacciArray.push(fibonacciArray[lgArray] + fibonacciArray[lgArray - 1]);
     }
   }
