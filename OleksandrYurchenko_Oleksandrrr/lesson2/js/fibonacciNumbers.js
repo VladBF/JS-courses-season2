@@ -1,7 +1,7 @@
 function fiboNumber(number) {
-  var a = 1,
-    b = 0,
-    temp;
+  var a = 1;
+  var  b = 0;
+  var  temp;
   var result = [];
   while (number >= 1) {
 
