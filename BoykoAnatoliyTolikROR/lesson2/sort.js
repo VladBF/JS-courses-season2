@@ -10,13 +10,13 @@ function sortJavaScript(arr) {
 }
 
 function mySort(arr) {
-  var changVariable;
+  var changeVariable;
   for (var i = 0; i < arr.length; i++) {
     for (var j = 0; j < arr.length - 1; j++) {
       if (arr[i] < arr[j]) {
-        changVariable = arr[i];
+        changeVariable = arr[i];
         arr[i] = arr[j];
-        arr[j] = changVariable;
+        arr[j] = changeVariable;
       }
     }
   }
