@@ -1,5 +1,5 @@
 var arbitraryArray = [2, 3, 3, 4, 4, 2, 1, 10];
-
+ 
 /**
  * Array sorting function using the .sort method
  */
