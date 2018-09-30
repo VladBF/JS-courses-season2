@@ -1,14 +1,15 @@
-function fibo(n) {
-  if (n <= 2) {
-    return 1;
-  } else {
-    var a = 1, b = 1, c = 0;
-    for (var i = 3; i <= n ; i++) {
-      c = a + b;
-      a = b;
-      b = c;
-    }
+function fibonacci(n) {
+  var fibonacciArray = [];
+  var lgArray = 0;
 
-    return c;
+  for (var i = 0; i < n; i++) {
+
+    if (i < 2) {
+      fibonacciArray.push(1);
+    } else {
+      lgArray = fibonacciArray.length - 1;
+      fibonacciArray.push(fibonacciArray[lgArray] + fibonacciArray[lgArray - 1]);
+    }
   }
+  return fibonacciArray;
 }
