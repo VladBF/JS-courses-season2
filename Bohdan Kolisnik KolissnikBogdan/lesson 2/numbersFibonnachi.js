@@ -14,7 +14,7 @@ function numFibonnachi(coutn) {
 	}
 
 	return arr;
-}		
+}
 
 console.log("Array with Fibonacci numbers : ");
 console.log(numFibonnachi(10));
