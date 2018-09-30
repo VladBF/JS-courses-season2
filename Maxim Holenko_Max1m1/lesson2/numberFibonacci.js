@@ -1,8 +1,8 @@
-function numbFibonacci (count) {
+function numbFibonacci(count) {
     var arr = [0, 1];
 
-    if(count == 0) {
-        return null;
+    if(count <= 0) {
+        return arr =[];
     }
     if (count == 1) {
         arr.pop();
@@ -16,5 +16,5 @@ function numbFibonacci (count) {
     }
 }
 
-console.log(numbFibonacci(12));
+console.log(numbFibonacci(5));
 
