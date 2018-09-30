@@ -1,4 +1,4 @@
-function fibo(n) {
+function fibonacci(n) {
   var fibonacciArray = [];
   var lgArray = 0;
 
