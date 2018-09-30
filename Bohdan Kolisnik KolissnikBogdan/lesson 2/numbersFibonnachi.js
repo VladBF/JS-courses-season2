@@ -2,7 +2,7 @@
  * Function of finding Fibonacci numbers (the number of elements of an array with Fibonacci numbers is passed as a parameter)
  */
 
-function numFibonnachi (coutn) {
+function numFibonnachi(coutn) {
 	var sum = 0, arr = [];
 
 	for (let i = 0; i < coutn; i++) {
