@@ -5,7 +5,7 @@ var arbitraryArray = [2, 3, 3, 4, 4, 2, 1, 10];
  */
 
 function uniqueValues(someArray) {
-  return someArray.filter((v, i, a) => a.indexOf(v) === i).sort((a, b) => a - b);
+    return someArray.filter((v, i, a) => a.indexOf(v) === i).sort((a, b) => a - b);
 }
 
 console.log("Unique array values : ");
