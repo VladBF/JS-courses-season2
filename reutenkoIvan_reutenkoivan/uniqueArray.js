@@ -1,4 +1,3 @@
-
 function unique(arr) {
   var result = [];
 
@@ -22,7 +21,3 @@ var numbers = [1,1,2,3,1,2];
 console.log(" ");
 console.log(numbers);
 console.log( unique(numbers) ); 
-
-
-
-

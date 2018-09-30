@@ -1,5 +1,3 @@
-
-
 function fibo(count){
 	var result = [1, 1];
 	var previous = 1, current = 1;
@@ -16,8 +14,3 @@ function fibo(count){
 
 console.log(" ");
 console.log(fibo(15));
-
-
-
-
-
