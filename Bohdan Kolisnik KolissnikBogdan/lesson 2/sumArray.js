@@ -5,13 +5,13 @@ var arbitraryArray = [2, 3, 3, 4, 4, 2, 1, 10];
  */
 
 function sumArray(someArray) {
-	var sum = 0;
+  var sum = 0;
 
-	for (var i = 0; i < someArray.length; i++) {
-		sum += someArray[i];
-	}
+  for (var i = 0; i < someArray.length; i++) {
+    sum += someArray[i];
+  }
 
-	return sum;
+  return sum;
 }
 
 console.log("Amount of array - " + sumArray(arbitraryArray));
