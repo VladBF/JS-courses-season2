@@ -1,4 +1,4 @@
-function fiboNumber(number) {
+function fibonacciNumber(number) {
   var a = 1;
   var  b = 0;
   var  temp;
@@ -15,4 +15,4 @@ function fiboNumber(number) {
   return b;
 }
 
-fiboNumber(5);
+fibonacciNumber(5);
