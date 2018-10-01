@@ -1,20 +1,21 @@
 var someArray = [1,56,3,45,6,110,15,24,2,1];
 
-function sortThisArray(uArr){
-  for (var i = 0; i<uArr.length-1; i++){
-	var swapped = false;
-	for (var j = 0; j<uArr.length-i; j++){  
-		if (uArr[j]>uArr[j+1]){
-		  var swap = uArr[j];
-		  uArr[j] = uArr[j+1];
-		  uArr[j+1] = swap;
-		  swapped = true;
-		}
+function sortThisArray(inputArray){
+  var swap;
+  for (var i = 0; i<inputArray.length-1; i++) {
+	for (var j = 0; j<inputArray.length-i; j++) {  
+	  if (inputArray[j]>inputArray[j+1]){
+		swap = inputArray[j];
+		inputArray[j] = inputArray[j+1];
+		inputArray[j+1] = swap;
+	  }
 	}
-	if (!swapped) break;
   } 
   
-  return uArr;
-}	
+  return inputArray;
+}
 
-console.log(sortThisArray(someArray));
+console.log(' ');
+console.log('Sorting array with bulb method');
+console.log('Unsorted array: ' + someArray);
+console.log('Sorted array: ' + sortThisArray(someArray));

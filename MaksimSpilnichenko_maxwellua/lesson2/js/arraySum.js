@@ -1,12 +1,16 @@
 var someArray = [1,56,3,45,6,110,15,24,2,1];
 
-function sumArray(sArr){
-  var sum = 0;
-  for (i = 0; i<sArr.length; i++){
-	sum += sArr[i];	
+function sumOfArray(inputArray){
+  var result = 0;
+  
+  for (i = 0; i < inputArray.length; i++) {
+	result += inputArray[i];	
   }
   
- return sum; 
+  return result; 
 }
 
-console.log(sumArray(someArray));
+console.log(' ');
+console.log('Evaluating sum of the elements in array');
+console.log('This array: ' + someArray);
+console.log('Sum of its elements: ' + sumOfArray(someArray));

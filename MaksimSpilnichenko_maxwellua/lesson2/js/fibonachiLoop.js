@@ -1,3 +1,5 @@
+var fiboNumber = 24;
+
 function fiboLoop(itemNumber) {
   var itemPrev = 1,
 	  itemLast = 1;
@@ -12,4 +14,6 @@ function fiboLoop(itemNumber) {
   return fiboArray;
 }
 
-console.log(fiboLoop(24));
+console.log(' ');
+console.log('Making Fibonachi row to ' + fiboNumber + ' element');
+console.log(fiboLoop(fiboNumber));
