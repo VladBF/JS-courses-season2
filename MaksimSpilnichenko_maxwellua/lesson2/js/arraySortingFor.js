@@ -19,3 +19,4 @@ console.log(' ');
 console.log('Sorting array with bulb method');
 console.log('Unsorted array: ' + someArray);
 console.log('Sorted array: ' + sortThisArray(someArray));
+	
