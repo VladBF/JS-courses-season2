@@ -7,14 +7,14 @@ function sortArrayBySort(array){
 
 //функція сортування масиву за допомогою циклу for (сортування вибором)
 function sortArrayByFor(array){
-    for (var i = 0; i < array.length-1; i++){
+    for(var i = 0; i < array.length - 1; i++){
     	var min = i;
-    	for (var j = i+1; j < array.length; j++){
+    	for(var j = i + 1; j < array.length; j++){
     		if (array[j] < array[min]) min = j;
     	} 
-    	var t = array[min];
+    	var dummy = array[min];
     	array[min] = array[i];
-    	array[i] = t;
+    	array[i] = dummy;
     }                    
     return array;
 }

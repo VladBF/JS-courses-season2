@@ -4,8 +4,8 @@ console.log("Масив: " + array);
 //функція обрахунку суми елементів мвсиву
 function summArrayElements(array){
 	var summ = 0;
-	for(var i=0; i<array.length; i++){
-		summ = summ + array[i];
+	for(var i = 0; i < array.length; i++){
+		summ += array[i];
 	}
 	console.log("Сума елементів масиву: " + summ);
 }
